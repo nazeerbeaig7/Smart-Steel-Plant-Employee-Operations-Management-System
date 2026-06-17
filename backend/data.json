@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@steelplant.com",
+      "password": "$2b$10$AEg6gNUWP8yIC8BfFahaAu0ss7j3.PQuYOlTAFbf5IwiUKgthAkVi",
+      "role": "admin",
+      "createdAt": "2026-06-17T17:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "John Doe",
+      "email": "john@steelplant.com",
+      "password": "$2b$10$AEg6gNUWP8yIC8BfFahaAu0ss7j3.PQuYOlTAFbf5IwiUKgthAkVi",
+      "role": "employee",
+      "createdAt": "2026-06-17T17:00:00.000Z"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1781718480194",
+      "user_id": "2",
+      "date": "2026-06-17",
+      "check_in_time": "2026-06-17T17:48:00.194Z",
+      "check_out_time": "2026-06-17T17:48:07.511Z"
+    },
+    {
+      "id": "1781718502933",
+      "user_id": "2",
+      "date": "2026-06-17",
+      "check_in_time": "2026-06-17T17:48:22.933Z",
+      "check_out_time": "2026-06-17T17:48:25.758Z"
+    },
+    {
+      "id": "1781719242755",
+      "user_id": "2",
+      "date": "2026-06-17",
+      "check_in_time": "2026-06-17T18:00:42.755Z",
+      "check_out_time": "2026-06-17T18:00:46.166Z"
+    }
+  ],
+  "leaves": [],
+  "maintenance_requests": [
+    {
+      "id": "1781718690471",
+      "reported_by": "John Doe",
+      "machine_name": "machine 1",
+      "issue_desc": "some issue",
+      "status": "pending",
+      "created_at": "2026-06-17T17:51:30.471Z",
+      "resolved_at": null,
+      "assigned_to": null
+    }
+  ]
+}

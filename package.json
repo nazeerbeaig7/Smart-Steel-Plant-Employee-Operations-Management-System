@@ -1,0 +1,13 @@
+{
+  "name": "smart-steel-plant",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node node_modules/concurrently/dist/bin/index.js \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && node node_modules/vite/bin/vite.js",
+    "dev:backend": "cd backend && node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

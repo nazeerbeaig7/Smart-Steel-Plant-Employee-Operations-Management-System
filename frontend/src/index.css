@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold py-2.5 px-5 rounded-xl shadow-md transition-all duration-200 active:scale-95 disabled:opacity-50;
+  }
+  .card {
+    @apply bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800/80 p-6 shadow-xl;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 bg-slate-950/50 border border-slate-800 rounded-xl focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 outline-none text-slate-100 transition-all duration-200 placeholder:text-slate-600;
+  }
+  .glass-card {
+    @apply bg-slate-900/40 backdrop-blur-lg border border-white/5 rounded-2xl shadow-2xl;
+  }
+  .steel-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-200 to-slate-400;
+  }
+}
+
+@theme {
+  --color-steel-50: #f6f7f9;
+  --color-steel-100: #ecedf2;
+  --color-steel-200: #d5d7e3;
+  --color-steel-300: #b1b6cc;
+  --color-steel-400: #8890b0;
+  --color-steel-500: #687094;
+  --color-steel-600: #53597b;
+  --color-steel-700: #434863;
+  --color-steel-800: #383d54;
+  --color-steel-900: #323647;
+  --color-steel-950: #232530;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
